@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay Industries – Air Ring &amp; Blown Film Plant Manufacturer | Vadodara</title>
+  <meta name="description" content="Vijay Industries – ISO 9001:2008 certified manufacturer of Rotating Air Rings, Blown Film Plants, Plastic Processing Machinery from Vadodara, Gujarat since 1991.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="topbar"></div>
+<div id="navbar"></div>
+
+
+<style>
+
+/* ===== HERO SECTION ===== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#f7f7f7;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.hero{
+  position:relative;
+  padding:100px 0;
+  overflow:hidden;
+  background:#fff;
+}
+
+.hero-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+/* ===== LEFT CONTENT ===== */
+
+.hero-text{
+  flex:1;
+  min-width:320px;
+}
+
+.badge{
+  display:inline-block;
+  padding:10px 18px;
+  background:#FFF3EA;
+  color:#E87722;
+  border-radius:50px;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.1;
+  color:#111;
+  margin-bottom:24px;
+  font-weight:800;
+}
+
+.hero h1 span{
+  color:#E87722;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.8;
+  color:#666;
+  margin-bottom:32px;
+  max-width:650px;
+}
+
+/* ===== BUTTONS ===== */
+
+.hero-actions{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:40px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 28px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s ease;
+}
+
+.btn-primary{
+  background:#E87722;
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:#cf6718;
+}
+
+.btn-outline{
+  border:2px solid #ddd;
+  color:#111;
+  background:#fff;
+}
+
+.btn-outline:hover{
+  border-color:#E87722;
+  color:#E87722;
+}
+
+/* ===== CERTIFICATIONS ===== */
+
+.hero-certs{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.hero-cert{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid #eee;
+  padding:14px 18px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  font-size:15px;
+  font-weight:600;
+}
+
+.hero-cert-icon{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#FFF3EA;
+  color:#E87722;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ===== RIGHT IMAGE ===== */
+
+.hero-visual{
+  flex:1;
+  min-width:320px;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-image-box{
+  width:100%;
+  max-width:520px;
+  border-radius:28px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 20px 60px rgba(0,0,0,0.12);
+}
+
+.hero-image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ===== FLOATING CHIPS ===== */
+
+.hero-chip{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#fff;
+  padding:14px 18px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.10);
+}
+
+.hero-chip-icon{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:#FFF3EA;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+}
+
+.hero-chip-num{
+  font-size:20px;
+  font-weight:700;
+  color:#111;
+}
+
+.hero-chip-label{
+  font-size:14px;
+  color:#666;
+}
+
+/* ===== CHIP POSITIONS ===== */
+
+.hero-chip--a{
+  top:20px;
+  left:-20px;
+}
+
+.hero-chip--b{
+  top:50%;
+  right:-20px;
+  transform:translateY(-50%);
+}
+
+.hero-chip--c{
+  bottom:20px;
+  left:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:991px){
+
+  .hero{
+    padding:70px 0;
+  }
+
+  .hero-inner{
+    flex-direction:column;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-visual{
+    margin-top:40px;
+  }
+
+  .hero-chip{
+    transform:scale(.9);
+  }
+
+  .hero-chip--a{
+    left:0;
+  }
+
+  .hero-chip--b{
+    right:0;
+    transform:translateY(-50%) scale(.9);
+  }
+
+  .hero-chip--c{
+    left:10px;
+  }
+}
+
+</style>
+
+<!-- ═══════════ HERO ═══════════ -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-inner">
+
+      <!-- LEFT CONTENT -->
+
+      <div class="hero-text">
+
+        <div class="badge">
+          Est. 1991 · Vadodara, Gujarat
+        </div>
+
+        <h1>
+          Precision Air Rings &amp;<br>
+          <span>Blown Film Plant</span><br>
+          Manufacturer
+        </h1>
+
+        <p>
+          ISO 9001:2008 certified manufacturer and trader of Rotating Air Rings,
+          Plant Air Rings, Blown Film Plant Fabricators, and Plastic Processing
+          Machinery — delivering international-grade quality since 1991.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="product-profile.html" class="btn btn-primary">
+            View Products →
+          </a>
+
+          <a href="inquiry.html" class="btn btn-outline">
+            Send Inquiry
+          </a>
+
+        </div>
+
+        <div class="hero-certs">
+
+          <div class="hero-cert">
+            <div class="hero-cert-icon">✓</div>
+            ISO 9001:2008 Certified
+          </div>
+
+          <div class="hero-cert">
+            <div class="hero-cert-icon">★</div>
+            30+ Years Experience
+          </div>
+
+          <div class="hero-cert">
+            <div class="hero-cert-icon">🔩</div>
+            9+ Product Lines
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE IMAGE -->
+
+      <div class="hero-visual">
+
+        <div class="hero-image-box">
+
+          <img 
+            src="assets/img/hero-machine.png"
+            alt="Blown Film Plant Machine"
+          >
+
+        </div>
+
+        <!-- FLOATING BOX -->
+
+        <div class="hero-chip hero-chip--a">
+          <div class="hero-chip-icon">🔄</div>
+
+          <div>
+            <div class="hero-chip-num">30+</div>
+            <div class="hero-chip-label">Years Active</div>
+          </div>
+        </div>
+
+        <!-- FLOATING BOX -->
+
+        <div class="hero-chip hero-chip--b">
+          <div class="hero-chip-icon">✅</div>
+
+          <div>
+            <div class="hero-chip-num">ISO</div>
+            <div class="hero-chip-label">9001:2008</div>
+          </div>
+        </div>
+
+        <!-- FLOATING BOX -->
+
+        <div class="hero-chip hero-chip--c">
+          <div class="hero-chip-icon">📦</div>
+
+          <div>
+            <div class="hero-chip-num">9+</div>
+            <div class="hero-chip-label">Product Lines</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+
+<!-- ═══════════ STATS ═══════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stat-cell">
+      <div class="num" data-count="30" data-suffix="+">30+</div>
+      <div class="lbl">Years of Experience</div>
+    </div>
+    <div class="stat-cell">
+      <div class="num" data-count="9" data-suffix="+">9+</div>
+      <div class="lbl">Product Categories</div>
+    </div>
+    <div class="stat-cell">
+      <div class="num" data-count="500" data-suffix="+">500+</div>
+      <div class="lbl">Clients Served</div>
+    </div>
+    <div class="stat-cell">
+      <div class="num" data-count="100" data-suffix="%">100%</div>
+      <div class="lbl">Quality Assured</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="section">
+  <div class="container">
+    <div class="about-wrap">
+
+   
+<div class="about-img reveal-l">
+
+  <div class="about-img-main">
+    <img 
+      src="assets/img/About.png" 
+      alt="Vijay Air Rings Factory"
+    >
+  </div>
+
+  <div class="about-year-tag">
+    <div class="big">1991</div>
+    <div class="small">Established</div>
+  </div>
+
+</div>
+
+<style>
+
+.about-img{
+  position:relative;
+  width:100%;
+  max-width:560px;
+}
+
+.about-img-main{
+  width:100%;
+  border-radius:28px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 20px 60px rgba(0,0,0,0.12);
+}
+
+.about-img-main img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+
+/* YEAR TAG */
+
+.about-year-tag{
+  position:absolute;
+  bottom:30px;
+  left:-20px;
+  background:#E87722;
+  color:#fff;
+  padding:18px 24px;
+  border-radius:18px;
+  box-shadow:0 14px 40px rgba(232,119,34,0.35);
+}
+
+.about-year-tag .big{
+  font-size:34px;
+  font-weight:800;
+  line-height:1;
+}
+
+.about-year-tag .small{
+  font-size:14px;
+  margin-top:6px;
+  letter-spacing:0.5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .about-year-tag{
+    left:10px;
+    bottom:10px;
+    padding:14px 18px;
+  }
+
+  .about-year-tag .big{
+    font-size:26px;
+  }
+
+}
+
+</style>
+
+
+
+      <div class="about-text reveal-r">
+        <span class="eyebrow">About Vijay Industries</span>
+        <div class="rule"></div>
+        <h2 class="section-title">Distinguished Manufacturer Since <span class="text-orange">1991</span></h2>
+
+        <p>
+          Established in 1991, Vijay Industries is a distinguished manufacturer and trader
+          of Rotating Air Rings, Plant Air Rings, Mono &amp; Multilayer Film Plant Air Rings,
+          Plastic Processing Plant and Machinery, Blown Film Plant Fabricator, Water Bath PP
+          Tubing Plant, Machinery Spares and Parts, Air Ring Parts, Liner Bags, and Air Ring
+          LD Tarpaulin Plant.
+        </p>
+        <p>
+          We are backed by a team of dedicated and experienced professionals working to
+          international standards. Our facility at Makarpura G.I.D.C., Vadodara, is equipped
+          with advanced machinery — allowing us to deliver fully customized products as per
+          client specifications.
+        </p>
+
+        <ul class="about-list">
+          <li>ISO 9001:2008 Certified</li>
+          <li>International Standards</li>
+          <li>Advanced Infrastructure</li>
+          <li>Expert Engineers</li>
+          <li>Custom Manufacturing</li>
+          <li>Pan-India &amp; Export Supply</li>
+        </ul>
+
+        <div style="display:flex;gap:.85rem;flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-primary">About Us <span class="arrow">→</span></a>
+          <a href="company-profile.html" class="btn btn-ghost">Company Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PRODUCTS ═══════════ -->
+<section class="section section--grey">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem;">
+      <span class="eyebrow reveal">Our Products</span>
+      <div class="rule" style="margin:0 auto 1rem;" ></div>
+      <h2 class="section-title reveal">Industrial Products &amp; Machinery</h2>
+      <p class="section-sub reveal" style="margin:0 auto;">
+        Precision-engineered products made from superior grade raw materials,
+        tested to industry standards, available in custom dimensions.
+      </p>
+    </div>
+
+    <div class="prod-grid stagger-parent">
+      <div class="prod-card reveal">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="32" stroke="#E87722" stroke-width="3"/><circle cx="40" cy="40" r="18" stroke="#E87722" stroke-width="2" stroke-dasharray="5 3"/><circle cx="40" cy="40" r="7" fill="#E87722"/></svg>
+          <span class="prod-label">Air Rings</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Rotating Air Rings</h3>
+          <p>High-volume rotating air rings for perfect cooling efficiency in blown film plants. Suitable for LD/LLDPE with bubble capacity up to 1600 mm.</p>
+          <a href="rotating-air-rings.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-1">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="30" stroke="#E87722" stroke-width="3"/><path d="M40 15 A25 25 0 0 1 65 40" stroke="#E87722" stroke-width="2.5" stroke-linecap="round"/><path d="M40 65 A25 25 0 0 1 15 40" stroke="#E87722" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <span class="prod-label">Air Rings</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Plant Air Rings</h3>
+          <p>Aluminium Irish Rings for HM Plant, Air Rings for Rotating Type Film Plant, Mono Layer Film Plant Air Rings, and Tarpaulin Tubing Plant Air Rings.</p>
+          <a href="plant-air-rings.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-2">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><rect x="15" y="25" width="50" height="35" rx="5" stroke="#E87722" stroke-width="3"/><path d="M25 25 L25 20 M40 25 L40 18 M55 25 L55 20" stroke="#E87722" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <span class="prod-label">Film Rings</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Mono &amp; Multilayer Film Plant Air Rings</h3>
+          <p>Specially designed for Mono and Multi Layer Film Plants — ideal for LLDPE, LD, Mono Layer, HM and Multi Layer operations.</p>
+          <a href="mono-multilayer-film-plant-air-rings.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><rect x="20" y="20" width="40" height="40" rx="4" stroke="#E87722" stroke-width="3"/><circle cx="40" cy="40" r="12" stroke="#E87722" stroke-width="2"/><circle cx="40" cy="40" r="4" fill="#E87722"/></svg>
+          <span class="prod-label">Machinery</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Plastic Processing Plant &amp; Machinery</h3>
+          <p>Comprehensive range including Extruder Dies, Bubble Guides, and Inserts for various plastic processing plant configurations.</p>
+          <a href="plastic-processing-plant-machinery.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-1">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><rect x="15" y="30" width="50" height="30" rx="4" stroke="#E87722" stroke-width="3"/><rect x="28" y="20" width="24" height="12" rx="3" stroke="#E87722" stroke-width="2"/><line x1="40" y1="60" x2="40" y2="70" stroke="#E87722" stroke-width="2"/></svg>
+          <span class="prod-label">Film Plant</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Blown Film Plant Fabricator</h3>
+          <p>Manufacturing and trading of Blown Film Plants since 1990, fabricated using supreme quality aluminium under expert supervision.</p>
+          <a href="blown-film-plant-fabricator.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-2">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="30" cy="50" r="12" stroke="#E87722" stroke-width="3"/><circle cx="52" cy="35" r="12" stroke="#E87722" stroke-width="3"/><path d="M38 44 L44 41" stroke="#E87722" stroke-width="2"/></svg>
+          <span class="prod-label">Spares</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Machinery Spares &amp; Parts</h3>
+          <p>Precision-manufactured spare parts for blown film and plastic processing machinery, ensuring minimal downtime at market-leading prices.</p>
+          <a href="machinery-spares-parts.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="28" stroke="#E87722" stroke-width="3"/><circle cx="40" cy="40" r="14" stroke="#E87722" stroke-width="2"/><circle cx="40" cy="18" r="4" fill="#E87722"/></svg>
+          <span class="prod-label">Parts</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Air Ring Parts</h3>
+          <p>Durable, high-performance air ring parts used extensively in blown film plants. Free from defects, available at market-leading prices.</p>
+          <a href="air-ring-parts.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-1">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><path d="M25 25 L55 25 L60 65 L20 65 Z" stroke="#E87722" stroke-width="3" stroke-linejoin="round"/><path d="M32 25 C32 18 48 18 48 25" stroke="#E87722" stroke-width="2"/></svg>
+          <span class="prod-label">Bags</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Liner Bags</h3>
+          <p>Quality liner bags in various sizes and specifications, rigorously tested before delivery, available at market-leading prices.</p>
+          <a href="liner-bags.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="prod-card reveal delay-2">
+        <div class="prod-card-img">
+          <svg viewBox="0 0 80 80" fill="none"><rect x="15" y="35" width="50" height="28" rx="5" stroke="#E87722" stroke-width="3"/><circle cx="40" cy="49" r="10" stroke="#E87722" stroke-width="2"/><path d="M28 35 L28 25 L52 25 L52 35" stroke="#E87722" stroke-width="2"/></svg>
+          <span class="prod-label">Tarpaulin</span>
+        </div>
+        <div class="prod-card-body">
+          <h3>Air Ring LD Tarpaulin Plant</h3>
+          <p>Specially designed air rings for LD Tarpaulin Plant applications, custom-built to client specifications for optimum performance.</p>
+          <a href="air-ring-ll-tarpaulin-plant.html" class="prod-card-link">View Details →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="product-profile.html" class="btn btn-outline">View All Products <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHY US ═══════════ -->
+<section class="section section--white">
+  <div class="container">
+    <div style="margin-bottom:3rem;">
+      <span class="eyebrow reveal">Why Choose Us</span>
+      <div class="rule"></div>
+      <h2 class="section-title reveal">What Sets Vijay Industries Apart</h2>
+      <p class="section-sub reveal">
+        We are a renowned manufacturer committed to ethical business practices,
+        transparent dealings, and consistent client satisfaction since 1991.
+      </p>
+    </div>
+
+    <div class="why-grid stagger-parent">
+      <div class="why-card reveal">
+        <div class="why-icon">👥</div>
+        <h4>Team of Experts</h4>
+        <p>Dedicated professionals with deep domain expertise in air ring and blown film technology delivering superior products.</p>
+      </div>
+      <div class="why-card reveal delay-1">
+        <div class="why-icon">🏭</div>
+        <h4>Modern Infrastructure</h4>
+        <p>Technologically advanced facility at Vadodara's G.I.D.C. with manufacturing, QC lab, and R&amp;D divisions.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon">🚚</div>
+        <h4>Timely Delivery</h4>
+        <p>Committed delivery schedules — products reach client premises safely and on time, every time.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon">✅</div>
+        <h4>Stringent Quality Testing</h4>
+        <p>ISO 9001:2008 certified processes with quality auditors checking every production stage.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💰</div>
+        <h4>Competitive Pricing</h4>
+        <p>Market-leading prices with easy payment options — quality you can afford without compromise.</p>
+      </div>
+      <div class="why-card reveal delay-1">
+        <div class="why-icon">🔧</div>
+        <h4>Customization</h4>
+        <p>Every product can be manufactured to exact client specifications — dimensions, material grade, and more.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon">🌐</div>
+        <h4>Wide Market Reach</h4>
+        <p>Covering a major market across India with national and international clients trusting our products.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon">🤝</div>
+        <h4>Transparent Dealings</h4>
+        <p>Ethical business policies and transparent dealings that have built lasting client relationships since 1991.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROCESS ═══════════ -->
+<section class="section section--grey">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem;">
+      <span class="eyebrow reveal">How We Work</span>
+      <div class="rule" style="margin:0 auto 1rem;"></div>
+      <h2 class="section-title reveal">Our Manufacturing Process</h2>
+    </div>
+
+    <div class="process-steps stagger-parent">
+      <div class="process-step reveal">
+        <div class="step-circle">01</div>
+        <h4>Requirement Analysis</h4>
+        <p>We study client specifications and technical requirements in detail before any production begins.</p>
+      </div>
+      <div class="process-step reveal delay-1">
+        <div class="step-circle">02</div>
+        <h4>Material Selection</h4>
+        <p>Supreme grade raw materials sourced from trusted vendors and quality-verified before use.</p>
+      </div>
+      <div class="process-step reveal delay-2">
+        <div class="step-circle">03</div>
+        <h4>Precision Manufacturing</h4>
+        <p>Advanced machinery and skilled engineers craft each component to exact specifications.</p>
+      </div>
+      <div class="process-step reveal delay-3">
+        <div class="step-circle">04</div>
+        <h4>Quality &amp; Dispatch</h4>
+        <p>Final inspection by QA team, then safe and timely dispatch to client premises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Ready to Work with Vijay Industries?</h2>
+    <p>Send us your product requirements and our expert team will respond with a tailored solution at competitive pricing.</p>
+    <div class="cta-actions">
+      <a href="inquiry.html" class="btn btn-white">Send Inquiry <span class="arrow">→</span></a>
+      <a href="contact.html" class="btn" style="border:1.5px solid rgba(255,255,255,.5);color:#fff;background:transparent;">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
