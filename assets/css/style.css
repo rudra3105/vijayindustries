@@ -585,15 +585,7 @@ input, textarea, select { font: inherit; }
   position: relative;
 }
 .about-img-main svg { opacity: .14; width: 55%; height: 55%; }
-/* industrial grid pattern */
-.about-img-main::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
+
 .about-year-tag {
   position: absolute;
   bottom: -1.25rem;
@@ -828,15 +820,7 @@ input, textarea, select { font: inherit; }
   position: relative;
   overflow: hidden;
 }
-.page-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
+
 .page-hero .container { position: relative; z-index: 1; }
 .page-hero h1 {
   font-family: var(--font-head);
@@ -1026,14 +1010,7 @@ input, textarea, select { font: inherit; }
   position: relative;
   overflow: hidden;
 }
-.info-img::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 26px 26px;
-}
+
 .info-img svg { opacity: .15; width: 45%; height: 45%; position: relative; z-index: 1; }
 
 .check-list li {
