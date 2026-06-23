@@ -32,56 +32,56 @@ const NAVBAR = `
 <nav class="navbar">
   <div class="container">
     <div class="nav-wrap">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/img/logo.jpg" alt="Vijay Industries" height="52">
+      <a href="/" class="nav-logo">
+        <img src="/assets/img/logo.jpg" alt="Vijay Industries" height="52">
       </a>
 
       <ul class="nav-links">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 
         <li class="nav-item">
-          <a href="about.html" class="nav-link">About Us <span class="caret">▾</span></a>
+          <a href="/about-us/" class="nav-link">About Us <span class="caret">▾</span></a>
           <div class="nav-drop">
-            <a href="about.html">Overview</a>
-            <a href="company-profile.html">Company Profile</a>
-            <a href="product-profile.html">Product Profile</a>
-            <a href="our-team.html">Our Team</a>
+            <a href="/about-us/">Overview</a>
+            <a href="/company-profile/">Company Profile</a>
+            <a href="/product-profile/">Product Profile</a>
+            <a href="/our-team/">Our Team</a>
           </div>
         </li>
 
         <li class="nav-item">
           <a href="#" class="nav-link">Capabilities <span class="caret">▾</span></a>
           <div class="nav-drop">
-            <a href="infrastructure.html">Infrastructure</a>
-            <a href="research-development.html">Research &amp; Development</a>
-            <a href="quality-assurance.html">Quality Assurance</a>
-            <a href="client-satisfaction.html">Client Satisfaction</a>
-            <a href="why-us.html">Why Us</a>
-            <a href="certificates.html">Certificates</a>
+            <a href="/infrastructure/">Infrastructure</a>
+            <a href="/research-development/">Research &amp; Development</a>
+            <a href="/quality-assurance/">Quality Assurance</a>
+            <a href="/client-satisfaction/">Client Satisfaction</a>
+            <a href="/why-us/">Why Us</a>
+            <a href="/certificates/">Certificates</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a href="product-profile.html" class="nav-link">Products <span class="caret">▾</span></a>
+          <a href="/product-profile/" class="nav-link">Products <span class="caret">▾</span></a>
           <div class="nav-drop">
-            <a href="rotating-air-rings.html">Rotating Air Rings</a>
-            <a href="plant-air-rings.html">Plant Air Rings</a>
-            <a href="mono-multilayer-film-plant-air-rings.html">Mono &amp; Multilayer Film Air Rings</a>
-            <a href="plastic-processing-plant-machinery.html">Plastic Processing Machinery</a>
-            <a href="blown-film-plant-fabricator.html">Blown Film Plant Fabricator</a>
-            <a href="machinery-spares-parts.html">Machinery Spares &amp; Parts</a>
-            <a href="air-ring-parts.html">Air Ring Parts</a>
-            <a href="liner-bags.html">Liner Bags</a>
-            <a href="air-ring-ll-tarpaulin-plant.html">Air Ring LD Tarpaulin Plant</a>
+            <a href="/rotating-air-rings/">Rotating Air Rings</a>
+            <a href="/plant-air-rings/">Plant Air Rings</a>
+            <a href="/mono-multilayer-film-plant-air-rings/">Mono &amp; Multilayer Film Air Rings</a>
+            <a href="/plastic-processing-plant-machinery/">Plastic Processing Machinery</a>
+            <a href="/blown-film-plant-fabricator/">Blown Film Plant Fabricator</a>
+            <a href="/machinery-spares-parts/">Machinery Spares &amp; Parts</a>
+            <a href="/air-ring-parts/">Air Ring Parts</a>
+            <a href="/liner-bags/">Liner Bags</a>
+            <a href="/air-ring-ld-tarpaulin-plant/">Air Ring LD Tarpaulin Plant</a>
           </div>
         </li>
 
-        <li class="nav-item"><a href="inquiry.html" class="nav-link">Inquiry</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="/inquiry/" class="nav-link">Inquiry</a></li>
+        <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-cta">
-        <a href="inquiry.html" class="btn btn-primary" style="font-size:.78rem;padding:.6rem 1.35rem;">Get a Quote</a>
+        <a href="/inquiry/" class="btn btn-primary" style="font-size:.78rem;padding:.6rem 1.35rem;">Get a Quote</a>
       </div>
 
       <button class="nav-burger" aria-label="Menu">
@@ -91,22 +91,22 @@ const NAVBAR = `
 
     <!-- Mobile drawer -->
     <div class="mobile-drawer">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="company-profile.html" class="sub-link">Company Profile</a>
-      <a href="product-profile.html" class="sub-link">Product Profile</a>
-      <a href="our-team.html" class="sub-link">Our Team</a>
-      <a href="infrastructure.html">Infrastructure</a>
-      <a href="quality-assurance.html" class="sub-link">Quality Assurance</a>
-      <a href="why-us.html" class="sub-link">Why Us</a>
-      <a href="product-profile.html">Products</a>
-      <a href="rotating-air-rings.html" class="sub-link">Rotating Air Rings</a>
-      <a href="plant-air-rings.html" class="sub-link">Plant Air Rings</a>
-      <a href="blown-film-plant-fabricator.html" class="sub-link">Blown Film Plant</a>
-      <a href="machinery-spares-parts.html" class="sub-link">Machinery Spares</a>
-      <a href="liner-bags.html" class="sub-link">Liner Bags</a>
-      <a href="inquiry.html">Inquiry</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about-us/">About Us</a>
+      <a href="/company-profile/" class="sub-link">Company Profile</a>
+      <a href="/product-profile/" class="sub-link">Product Profile</a>
+      <a href="/our-team/" class="sub-link">Our Team</a>
+      <a href="/infrastructure/">Infrastructure</a>
+      <a href="/quality-assurance/" class="sub-link">Quality Assurance</a>
+      <a href="/why-us/" class="sub-link">Why Us</a>
+      <a href="/product-profile/">Products</a>
+      <a href="/rotating-air-rings/" class="sub-link">Rotating Air Rings</a>
+      <a href="/plant-air-rings/" class="sub-link">Plant Air Rings</a>
+      <a href="/blown-film-plant-fabricator/" class="sub-link">Blown Film Plant</a>
+      <a href="/machinery-spares-parts/" class="sub-link">Machinery Spares</a>
+      <a href="/liner-bags/" class="sub-link">Liner Bags</a>
+      <a href="/inquiry/">Inquiry</a>
+      <a href="/contact/">Contact</a>
     </div>
   </div>
 </nav>
@@ -116,15 +116,15 @@ const NAVBAR = `
 const SIDEBAR = `
 <div class="sidebar-box">
   <div class="sidebar-head">Product Categories</div>
-  <a href="rotating-air-rings.html" class="sidebar-link">Rotating Air Rings</a>
-  <a href="plant-air-rings.html" class="sidebar-link">Plant Air Rings</a>
-  <a href="mono-multilayer-film-plant-air-rings.html" class="sidebar-link">Mono &amp; Multilayer Film Air Rings</a>
-  <a href="plastic-processing-plant-machinery.html" class="sidebar-link">Plastic Processing Machinery</a>
-  <a href="blown-film-plant-fabricator.html" class="sidebar-link">Blown Film Plant Fabricator</a>
-  <a href="machinery-spares-parts.html" class="sidebar-link">Machinery Spares &amp; Parts</a>
-  <a href="air-ring-parts.html" class="sidebar-link">Air Ring Parts</a>
-  <a href="liner-bags.html" class="sidebar-link">Liner Bags</a>
-  <a href="air-ring-ll-tarpaulin-plant.html" class="sidebar-link">Air Ring LD Tarpaulin Plant</a>
+  <a href="/rotating-air-rings/" class="sidebar-link">Rotating Air Rings</a>
+  <a href="/plant-air-rings/" class="sidebar-link">Plant Air Rings</a>
+  <a href="/mono-multilayer-film-plant-air-rings/" class="sidebar-link">Mono &amp; Multilayer Film Air Rings</a>
+  <a href="/plastic-processing-plant-machinery/" class="sidebar-link">Plastic Processing Machinery</a>
+  <a href="/blown-film-plant-fabricator/" class="sidebar-link">Blown Film Plant Fabricator</a>
+  <a href="/machinery-spares-parts/" class="sidebar-link">Machinery Spares &amp; Parts</a>
+  <a href="/air-ring-parts/" class="sidebar-link">Air Ring Parts</a>
+  <a href="/liner-bags/" class="sidebar-link">Liner Bags</a>
+  <a href="/air-ring-ld-tarpaulin-plant/" class="sidebar-link">Air Ring LD Tarpaulin Plant</a>
 </div>
 `;
 
@@ -135,7 +135,7 @@ const FOOTER = `
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">
-          <img src="assets/img/logo.jpg" alt="Vijay Industries">
+          <img src="/assets/img/logo.jpg" alt="Vijay Industries">
         </div>
         <p>Distinguished manufacturer &amp; trader of Rotating Air Rings, Blown Film Plants, and Plastic Processing Machinery from Vadodara, Gujarat since 1991.</p>
         <div class="footer-badge">★ ISO 9001:2008 Certified</div>
@@ -144,26 +144,26 @@ const FOOTER = `
       <div class="footer-col">
         <h5>Company</h5>
         <ul class="footer-links">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="company-profile.html">Company Profile</a></li>
-          <li><a href="our-team.html">Our Team</a></li>
-          <li><a href="infrastructure.html">Infrastructure</a></li>
-          <li><a href="quality-assurance.html">Quality Assurance</a></li>
-          <li><a href="why-us.html">Why Choose Us</a></li>
-          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="/about-us/">About Us</a></li>
+          <li><a href="/company-profile/">Company Profile</a></li>
+          <li><a href="/our-team/">Our Team</a></li>
+          <li><a href="/infrastructure/">Infrastructure</a></li>
+          <li><a href="/quality-assurance/">Quality Assurance</a></li>
+          <li><a href="/why-us/">Why Choose Us</a></li>
+          <li><a href="/certificates/">Certificates</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5>Products</h5>
         <ul class="footer-links">
-          <li><a href="rotating-air-rings.html">Rotating Air Rings</a></li>
-          <li><a href="plant-air-rings.html">Plant Air Rings</a></li>
-          <li><a href="mono-multilayer-film-plant-air-rings.html">Mono &amp; Multilayer Film</a></li>
-          <li><a href="blown-film-plant-fabricator.html">Blown Film Plant</a></li>
-          <li><a href="plastic-processing-plant-machinery.html">Plastic Processing</a></li>
-          <li><a href="machinery-spares-parts.html">Machinery Spares</a></li>
-          <li><a href="liner-bags.html">Liner Bags</a></li>
+          <li><a href="/rotating-air-rings/">Rotating Air Rings</a></li>
+          <li><a href="/plant-air-rings/">Plant Air Rings</a></li>
+          <li><a href="/mono-multilayer-film-plant-air-rings/">Mono &amp; Multilayer Film</a></li>
+          <li><a href="/blown-film-plant-fabricator/">Blown Film Plant</a></li>
+          <li><a href="/plastic-processing-plant-machinery/">Plastic Processing</a></li>
+          <li><a href="/machinery-spares-parts/">Machinery Spares</a></li>
+          <li><a href="/liner-bags/">Liner Bags</a></li>
         </ul>
       </div>
 
@@ -204,6 +204,64 @@ const FOOTER = `
 <button class="back-top" aria-label="Back to top">↑</button>
 `;
 
+/* ── Inquiry Popup Modal ── */
+const INQUIRY_MODAL = `
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3 id="inquiryModalTitle">Send an Inquiry</h3>
+        <p>We typically respond within 24 business hours.</p>
+      </div>
+      <button type="button" class="modal-close" data-inquiry-close aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="inquiryModalForm" data-form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b61cd5a2-e28c-462b-979a-d1f3c9cb4cae">
+        <input type="hidden" name="subject" value="New Product Inquiry – Vijay Industries">
+        <input type="hidden" name="from_name" value="Vijay Industries Website">
+        <input type="hidden" name="product" id="inquiryModalProduct" value="General Inquiry">
+
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-control" placeholder="Full name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-control" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Company Name</label>
+          <input type="text" name="company" class="form-control" placeholder="Company / Organisation">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Quantity Required</label>
+          <input type="text" name="quantity" class="form-control" placeholder="e.g. 2 units, 100 kg">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Message / Specifications</label>
+          <textarea name="message" class="form-control" rows="4" placeholder="Describe dimensions, material grade, delivery location, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:.9rem;">
+          Submit Inquiry →
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
 /* ── Inject on DOM ready ── */
 document.addEventListener('DOMContentLoaded', () => {
   // Topbar
@@ -219,13 +277,19 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('#prod-sidebar').forEach(el => {
     el.innerHTML = SIDEBAR;
     // highlight active
-    const page = location.pathname.split('/').pop();
+    let currentPath = location.pathname;
+    if (!currentPath.endsWith('/')) currentPath += '/';
     el.querySelectorAll('.sidebar-link').forEach(a => {
-      if ((a.getAttribute('href') || '') === page) a.classList.add('active');
+      if ((a.getAttribute('href') || '') === currentPath) a.classList.add('active');
     });
   });
 
   // Footer
   const ftSlot = document.getElementById('footer');
   if (ftSlot) ftSlot.outerHTML = FOOTER;
+
+  // Inquiry Modal (inject once, at end of body)
+  if (!document.getElementById('inquiryModal')) {
+    document.body.insertAdjacentHTML('beforeend', INQUIRY_MODAL);
+  }
 });

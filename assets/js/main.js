@@ -5,6 +5,8 @@
 (function () {
   'use strict';
 
+  function init() {
+
   /* ── Navbar shadow on scroll ── */
   const navbar = document.querySelector('.navbar');
   if (navbar) {
@@ -24,10 +26,12 @@
   }
 
   /* ── Active nav link ── */
-  const page = location.pathname.split('/').pop() || 'index.html';
+  // Normalize current path to always end with a trailing slash (e.g. "/about-us/")
+  let currentPath = location.pathname;
+  if (!currentPath.endsWith('/')) currentPath += '/';
   document.querySelectorAll('.nav-link, .sidebar-link, .mobile-drawer a').forEach(a => {
     const href = a.getAttribute('href') || '';
-    if (href === page || (page === '' && href === 'index.html')) {
+    if (href && href.startsWith('/') && href === currentPath) {
       a.classList.add('active');
     }
   });
@@ -76,7 +80,7 @@
     backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
-  /* ── Form submit simulation ── */
+  /* ── Form submit — real submission via W3Forms ── */
   document.querySelectorAll('form[data-form]').forEach(form => {
     form.addEventListener('submit', e => {
       e.preventDefault();
@@ -92,21 +96,89 @@
       });
       if (!ok) return;
       if (!btn) return;
+
       const orig = btn.textContent;
       btn.textContent = 'Sending…';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = '✓ Message Sent';
-        btn.style.background = '#27ae60';
+
+      const formData = new FormData(form);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          btn.textContent = '✓ Message Sent';
+          btn.style.background = '#27ae60';
+        } else {
+          btn.textContent = '✗ Failed — Try Again';
+          btn.style.background = '#e05252';
+        }
         setTimeout(() => {
           btn.textContent = orig;
           btn.disabled = false;
           btn.style.background = '';
           form.reset();
-        }, 3000);
-      }, 1400);
+          // Close modal if this form lives inside one
+          const modal = form.closest('.modal-overlay');
+          if (modal && data.success) modal.classList.remove('open');
+        }, 2200);
+      })
+      .catch(() => {
+        btn.textContent = '✗ Network Error';
+        btn.style.background = '#e05252';
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.disabled = false;
+          btn.style.background = '';
+        }, 2500);
+      });
     });
   });
+
+  /* ── Inquiry Popup Modal ── */
+  const inquiryModal   = document.getElementById('inquiryModal');
+  const inquiryForm    = document.getElementById('inquiryModalForm');
+  const inquiryProduct = document.getElementById('inquiryModalProduct');
+  const inquiryTitle   = document.getElementById('inquiryModalTitle');
+
+  function openInquiryModal(productName) {
+    if (!inquiryModal) return;
+    if (inquiryProduct) inquiryProduct.value = productName || 'General Inquiry';
+    if (inquiryTitle) inquiryTitle.textContent = productName ? `Inquire — ${productName}` : 'Send an Inquiry';
+    inquiryModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    const firstInput = inquiryModal.querySelector('input[type=text]');
+    if (firstInput) setTimeout(() => firstInput.focus(), 250);
+  }
+
+  function closeInquiryModal() {
+    if (!inquiryModal) return;
+    inquiryModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-inquiry-open]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      openInquiryModal(btn.dataset.inquiryOpen);
+    });
+  });
+
+  if (inquiryModal) {
+    inquiryModal.querySelectorAll('[data-inquiry-close]').forEach(el => {
+      el.addEventListener('click', closeInquiryModal);
+    });
+    inquiryModal.addEventListener('click', e => {
+      if (e.target === inquiryModal) closeInquiryModal();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeInquiryModal();
+    });
+  }
 
   /* ── Stagger children of .stagger-parent ── */
   document.querySelectorAll('.stagger-parent').forEach(parent => {
@@ -114,5 +186,14 @@
       child.style.transitionDelay = `${i * 0.07}s`;
     });
   });
+
+  } // end init()
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    // DOM already parsed (e.g. script executed after DOMContentLoaded already fired)
+    init();
+  }
 
 })();
